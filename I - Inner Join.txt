@@ -1,0 +1,4 @@
+
+result = pd.concat([df1, df4], axis=1, join="inner")
+
+keys=["z", "y"]

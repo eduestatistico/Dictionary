@@ -1,0 +1,1 @@
+df.loc[df.groupby(["clientid"])["ever30_m3"].idxmax()] 

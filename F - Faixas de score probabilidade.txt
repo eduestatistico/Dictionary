@@ -1,0 +1,4 @@
+MEI_FIDC['c_proba']=pd.qcut(MEI_FIDC['proba'],5,labels=False,duplicates='drop')
+
+intervalos = list(MEI_FIDC.groupby(['c_proba']).agg({'proba':[np.min]})['proba']['amin'])
+intervalos

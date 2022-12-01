@@ -1,0 +1,1 @@
+MEI['des_resu'].replace('instalação','Instalação')

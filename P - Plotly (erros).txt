@@ -1,0 +1,3 @@
+# Auxilía no erro do Plotly
+import plotly.offline as pyo 
+pyo.init_notebook_mode()

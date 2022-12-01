@@ -1,0 +1,7 @@
+Substitua os valores NULL pelo número 222222:
+
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+newdf = df.fillna(222222)

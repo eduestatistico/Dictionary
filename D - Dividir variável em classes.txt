@@ -1,0 +1,16 @@
+Base['faixas]=pd.qcut(base['variavel_para_dividir'],10,labels=False)
+intervalos = list(Base.groupby(['faixas']).agg({'variavel_para_dividir':[np.max]})['variavel_para_dividir']['amax'])
+intervalos
+
+def fx_score(variavel_para_dividir):
+	if variavel_para_dividir <= intervalos[0]:
+		return 0
+	elif variavel_para_dividir <= intervalos[1]:
+		return 1
+	elif variavel_para_dividir <= intervalos[2]:
+		return 2
+	elif variavel_para_dividir <= intervalos[3]:
+		return 3
+		return -1
+
+Base['faixas_div']=base['variavel_para_dividir'].map(fx_score)

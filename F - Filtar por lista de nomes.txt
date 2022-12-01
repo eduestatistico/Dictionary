@@ -1,0 +1,4 @@
+BASE_NOVA= BASE.loc[BASE['des_resu'].isin(['Restaurantes','rodoviário','Obras'])]
+
+# conteém uma letra ou palavra
+SM = df_3.loc[(df.description.str.contains('INFORMACAO'))]

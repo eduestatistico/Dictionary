@@ -1,0 +1,1 @@
+MEI_FIDC['idade2'] = MEI_FIDC['idade'].fillna(0)

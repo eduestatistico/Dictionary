@@ -1,0 +1,3 @@
+# Atualiaza os dias para o primeiro do mês
+lista_m_1 =lista_datas_finais -pd.offsets.MonthBegin(1)
+lista_m_1

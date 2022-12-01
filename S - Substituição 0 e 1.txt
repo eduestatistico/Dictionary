@@ -1,0 +1,1 @@
+FIDC_BHV['45MOB4'] = np.where(FIDC_BHV['DiasAtraso']>= 45,1,0)

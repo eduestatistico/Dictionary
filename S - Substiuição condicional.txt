@@ -1,0 +1,24 @@
+Exemplo:
+dados = pd.DataFrame({'area': [21, 0, 34, 0, 45, 23], 'area_terreno': [21, 56, 34, 67, 45, 23]})
+dados
+
+
+        area    area_terreno
+0	21	21
+1	0	56
+2	34	34
+3	0	67
+4	45	45
+5	23	23
+
+
+
+dados['area'] = dados.apply(lambda x: x['area_terreno'] if x['area'] == 0 else x['area'], axis=1)
+dados
+       area	area_terreno
+0	21	21
+1	56	56
+2	34	34
+3	67	67
+4	45	45
+5	23	23

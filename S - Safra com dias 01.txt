@@ -1,0 +1,1 @@
+dp_equador['FECHA_SAFRA'] = pd.to_datetime(dp_equador['FECHA_PEDIDO'].astype(str).str[:-2]+'01',format= '%Y%m%d'

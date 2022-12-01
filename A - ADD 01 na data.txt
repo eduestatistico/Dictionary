@@ -1,0 +1,3 @@
+Base2['Safra'] = pd.to_datetime(Base2['FECHA_PEDIDO'].astype(str).str[:-2]+'01',format= '%Y%m%d'
+
+Base2['Safra'] = pd.to_datetime(Base2['Safra'].astype(str)+'01',format= '%Y%m%d')

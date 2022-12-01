@@ -1,0 +1,1 @@
+FIDC_BHV['DiasAtraso'].isna().sum()

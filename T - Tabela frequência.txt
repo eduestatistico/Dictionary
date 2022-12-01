@@ -1,0 +1,4 @@
+# tabela para verificar o motivo de haver 93 estados
+AddressState=MEI_SQL['AddressState'].value_counts().rename_axis('StatusConta').reset_index(name='VOL')
+AddressState['FREQ'] = AddressState['VOL']/AddressState['VOL'].sum()*100 # Adicionando coluna com a frequencia do volume
+AddressState
